@@ -48,11 +48,6 @@ body {
   grid-area: 4 / 3 / 5 / 4;
 }
 
-div {
-  /* margin: 5px; */
-  /* border: 1px solid red; */
-}
-
 .horizontal-flex {
   display: flex;
   justify-content: space-between;
@@ -96,7 +91,7 @@ div {
   text-align: right;
 }
 
-.border-custom { */
+.border-custom {
   border-color: rgba(0,0,0, 0.17);
   border-radius: 5px;
 }
@@ -104,7 +99,6 @@ div {
 .point {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-      /* width: 50%; */
       border-radius: 5px;
       font-size: 1rem;
       color: #f8ab11;

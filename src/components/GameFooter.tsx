@@ -1,7 +1,4 @@
-import React from "react";
-import { useState } from "react";
 import TimeAndScore from "./TimeAndScore";
-import Undo from "./Undo";
 
 interface MatchScore {
   playerOne: number;

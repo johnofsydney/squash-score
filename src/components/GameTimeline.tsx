@@ -1,9 +1,7 @@
-import React from "react";
-import { useState } from "react";
 import RallyResult from "./RallyResult";
 
 interface Props {
-  ralliesWon: [];
+  ralliesWon: string[];
 }
 
 const GameTimeline = ({ ralliesWon }: Props) => {
@@ -14,7 +12,6 @@ const GameTimeline = ({ ralliesWon }: Props) => {
   return (
     <div className="h-100">
       {ralliesWon.slice(0, 11).map((winner, index) => {
-        // return <div key={index}>{winner}</div>;
         return <RallyResult key={index} winner={winner} />;
       })}
     </div>

@@ -7,16 +7,15 @@ import CurrentScore from "./components/CurrentScore";
 import RallyActions from "./components/RallyActions";
 
 function App() {
-  const [count, setCount] = useState(0);
   const playerOne = "Bill";
   const playerTwo = "Mary";
   const [gameScore, setGameScore] = useState({ playerOne: 0, playerTwo: 0 });
   const [matchScore, setMatchScore] = useState({ playerOne: 0, playerTwo: 0 });
   const gameNumber = matchScore.playerOne + matchScore.playerTwo + 1;
-  const [matchStartTime, setMatchStartTime] = useState(new Date().getTime());
+  const [matchStartTime] = useState(new Date().getTime());
   const [nextPlayerToServe, setNextPlayerToServe] = useState(playerOne);
   const [servingSide, setServingSide] = useState("left");
-  const [ralliesWon, setRalliesWon] = useState([]);
+  const [ralliesWon, setRalliesWon] = useState<string[]>([]);
 
   const handleWinPoint = (player: string) => {
     if (player === playerOne) {
@@ -85,7 +84,7 @@ function App() {
           <GameHeading gameNumber={gameNumber} />
         </div>
         <div className="div2">
-          <GameTimeline ralliesWon={ralliesWon} />
+          <GameTimeline ralliesWon={[...ralliesWon].reverse()} />
         </div>
         <div className="div3 mt-3">
           <GameFooter matchScore={matchScore} matchStartTime={matchStartTime} />
