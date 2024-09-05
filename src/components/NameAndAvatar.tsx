@@ -1,5 +1,3 @@
-import React from "react";
-import { useState } from "react";
 import NextServeIndicator from "./NextServeIndicator";
 
 interface Props {

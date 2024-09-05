@@ -3,6 +3,12 @@ interface MatchScoreComponent {
   playerTwo: string;
 }
 
+interface MatchScore {
+  playerOne: number;
+  playerTwo: number;
+  // Add other properties as needed
+}
+
 interface Props {
   matchScore: MatchScore;
 }

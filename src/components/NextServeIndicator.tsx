@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Props {
   servingSide: string;
   toggleServingSide: (handout: boolean) => void;
