@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "homepage": "https://johnofsydney.github.io/squash-score",
   "type": "module",
+  "base": "/squash-score/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
