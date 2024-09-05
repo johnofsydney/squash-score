@@ -2,7 +2,7 @@
   "name": "squash-score-replica",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://johnofsydney.github.io/squash-score",
+  "homepage": "https://johnofsydney.github.io/squash-score/",
   "type": "module",
   "base": "/squash-score/",
   "scripts": {
